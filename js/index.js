@@ -4,13 +4,16 @@ const imageContainer = document.querySelector('.image-container');
 const images = imageContainer.querySelectorAll('.card');
 const emptyDiv = document.querySelector('.empty-div');
 const scrollBtn = document.querySelector('.scroll-btn');
-const projectsHeadline = document.querySelector('.projects-headline');
-const projectsSection = document.querySelector('#projects-section');
+// const projectsHeadline = document.querySelector('.projects-headline');
+// const projectsSection = document.querySelector('#projects-section');
+const main = document.querySelector('main');
+const aboutImage = document.querySelector('.about-info img');
+const aboutHeader = document.querySelector('#about-section h2');
+const aboutParagraph = document.querySelector('#about-section p');
 
 // eventlisteners
 window.addEventListener('scroll', parallaxScroll);
 scrollBtn.addEventListener('click', scrollToProjects);
-window.SmoothScrollOptions = { animationTime: 1000 };
 
 function scrollToProjects() {
   window.scroll({
@@ -19,25 +22,31 @@ function scrollToProjects() {
 }
 
 function parallaxScroll(e) {
+  const scroll = window.pageYOffset;
+  //   console.log(scroll);
+
   if (window.innerWidth >= 1200) {
-    const scroll = window.pageYOffset * 2;
     emptyDiv.style.height = `${scroll}px`;
-    scrollBtn.style.transform = `translate3d(0px, -${scroll}px, 0px)`;
-    projectsHeadline.style.transform = `translate3d(0px, -${scroll}px, 0px)`;
-    projectsSection.style.transform = `translate3d(0px, -${scroll}px, 0px)`;
-    images.forEach((image, index) => {
-      const position = window.pageYOffset * image.dataset.rate;
+    main.style.transform = `translate3d(0px, -${scroll}px, 0px)`;
+    images.forEach((image) => {
+      const position = (window.pageYOffset * image.dataset.rate) / 3;
       //   const yPosition = index * 100;
       image.style.transform = `translate3d(0px, ${position}px, 0px`;
     });
-  } else if (window.innerWidth < 1200) {
+  }
+  if (window.innerWidth < 1200) {
     emptyDiv.style.height = `0px`;
-    scrollBtn.style.transform = `translate3d(0px, 0px, 0px)`;
-    projectsHeadline.style.transform = `translate3d(0px, 0px, 0px)`;
-    projectsSection.style.transform = `translate3d(0px, 0px, 0px)`;
+    main.style.transform = `translate3d(0px, 0px, 0px)`;
     images.forEach((image) => {
       image.style.transform = `translate3d(0px, 0px, 0px)`;
     });
+  }
+
+  if (scroll > 550) {
+    aboutImage.classList.add('fade-in');
+    aboutHeader.classList.add('fade-in');
+    aboutParagraph.classList.add('fade-in');
+    console.log('540+');
   }
 }
 

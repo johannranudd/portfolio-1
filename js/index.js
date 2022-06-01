@@ -98,7 +98,6 @@ async function displayTech() {
         <img src="${image}" alt="${name}" />
         <div>
             <h4>${name}</h3>
-            <p>${text}</p>
         </div>
       </li>
       `;
@@ -109,7 +108,6 @@ async function displayTech() {
         <img src="${image}" alt="${name}" />
         <div>
             <h4>${name}</h4>
-            <p>${text}</p>
         </div>
       </li>
       `;

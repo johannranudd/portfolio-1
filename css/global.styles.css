@@ -81,7 +81,7 @@ button {
 }
 
 .section-center {
-  width: 95%;
+  width: 90%;
   max-width: 1200px;
   margin: auto;
 }
@@ -97,7 +97,7 @@ button {
 
 .inner-navbar {
   width: 90%;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   height: 4rem;
   display: flex;

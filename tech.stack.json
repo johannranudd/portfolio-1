@@ -3,58 +3,56 @@
     {
       "id": 1,
       "name": "next.js",
-      "image": "https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png",
-      "status": "experience with",
-      "text": "experience with Next.js"
+      "image": "./images/next-rs-crop.png",
+      "status": "experience with"
     },
     {
       "id": 2,
-      "name": "react.js",
+      "name": "React.js",
       "image": "./images/react.png",
-      "status": "experience with",
-      "text": "experience with Next.js"
+      "status": "experience with"
     },
     {
       "id": 3,
-      "name": "javaScript",
-      "image": "./images/javascript-rs.webp",
-      "status": "experience with",
-      "text": "experience with Next.js"
+      "name": "JavaScript",
+      "image": "./images/js.png",
+      "status": "experience with"
     },
     {
       "id": 4,
       "name": "CSS",
-      "image": "./images/css.png",
-      "status": "experience with",
-      "text": "experience with Next.js"
+      "image": "./images/css-rs-crop.png",
+      "status": "experience with"
     },
     {
       "id": 5,
       "name": "HTML",
-      "image": "./images/react.png",
-      "status": "experience with",
-      "text": "experience with Next.js"
+      "image": "./images/html-rs-crop.jpg",
+      "status": "experience with"
     },
     {
       "id": 6,
       "name": "UX/UI",
-      "image": "./images/react.png",
-      "status": "experience with",
-      "text": "experience with Next.js"
+      "image": "./images/figma.png",
+      "status": "experience with"
     },
     {
       "id": 7,
-      "name": "node.js",
-      "image": "./images/react.png",
-      "status": "want to know",
-      "text": "experience with Next.js"
+      "name": "WordPress",
+      "image": "./images/wp-rs-crop.jpg",
+      "status": "experience with"
     },
     {
       "id": 8,
-      "name": "svelte",
-      "image": "./images/react.png",
-      "status": "want to know",
-      "text": "experience with Next.js"
+      "name": "Node.js",
+      "image": "./images/node-rs-crop.jpg",
+      "status": "want to know"
+    },
+    {
+      "id": 9,
+      "name": "Svelte",
+      "image": "./images/svelte.png",
+      "status": "want to know"
     }
   ]
 }

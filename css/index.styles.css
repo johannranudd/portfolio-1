@@ -90,7 +90,7 @@
 }
 .about-info {
   display: grid;
-  /* grid-gap: 3rem; */
+  row-gap: 3rem;
 }
 
 .about-info p {
@@ -185,6 +185,7 @@
     max-width: 100%;
   }
   .about-info {
+    column-gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
   }
 

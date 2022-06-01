@@ -108,8 +108,6 @@
 
 /* ***teach section*** */
 #tech-section {
-  max-width: 100vw;
-  overflow: hidden;
 }
 #tech-section h3 {
   padding: 2rem 0;

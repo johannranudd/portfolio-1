@@ -120,29 +120,29 @@
 #tech-section ul {
 }
 #tech-section ul li div {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 #tech-section img {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* border-radius: 15px; */
   /* max-width: 140px; */
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .tech-list {
-  display: grid;
-  place-items: center;
+  /* display: grid; */
+  /* place-items: center; */
   /* grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); */
-  grid-gap: 2rem;
+  /* grid-gap: 2rem; */
 }
 
 .want-to-know-tech-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2.4rem;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* gap: 2.4rem; */
 }
 .want-to-know-tech-list img {
   max-width: 130px;

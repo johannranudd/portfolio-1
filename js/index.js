@@ -135,3 +135,11 @@ window.addEventListener('resize', () => {
     menuBtn.classList.remove('menu-is-open');
   }
 });
+
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(document.querySelectorAll('*'), function (el) {
+  if (el.offsetWidth > docWidth) {
+    console.log(el);
+  }
+});

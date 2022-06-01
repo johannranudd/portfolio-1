@@ -1,10 +1,31 @@
 .hero-section {
+  position: relative;
   max-height: 100vh;
 }
 
-.hero-section img {
+.hero-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
   width: 100%;
+  display: grid;
+  place-content: center;
+  /* background: rgba(0, 0, 0, 0.258); */
+  color: var(--clr-white);
 }
+
+.hero-text h1 {
+  font-size: 3rem;
+  padding: 0;
+}
+
+#vanta-canvas {
+  min-height: 100vh;
+}
+
+/* .hero-section img {
+  width: 100%;
+} */
 
 .empty-div {
   height: 0;
@@ -19,7 +40,18 @@
 
 /* projects section */
 .projects-headline {
-  /* padding-top: 0; */
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.3s;
+}
+.paragraph {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: 0.3s;
+}
+.image-container {
+  opacity: 0;
+  transition: 0.3s;
 }
 .image-container .card {
   display: flex;
@@ -44,7 +76,7 @@
   }
   .scroll-btn-container {
     position: relative;
-    top: -50px;
+    top: -100px;
     display: flex;
     justify-content: center;
     /* margin-bottom: 7rem; */
@@ -57,10 +89,13 @@
   .empty-div {
     background: var(--clr-white);
   }
+
+  /* projects section */
   #projects-section {
     display: grid;
     grid-template-columns: 40% 60%;
   }
+
   .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -82,6 +117,9 @@
     margin: auto;
     /* left: 50%; */
     /* transform: translateX(-50%); */
+  }
+  .hero-text {
+    width: 500px;
   }
   #projects-section {
     /* background: #000; */
@@ -121,7 +159,7 @@
 #about-section h2 {
   opacity: 0;
   transition: 1s;
-  /* color: green; */
+  transform: translateX(10%);
 }
 .about-info {
   display: grid;
@@ -131,7 +169,7 @@
 
 .about-info p {
   opacity: 0;
-  transform: translateY(200%);
+  transform: translateY(20%);
   transition: 1s;
 }
 
@@ -140,15 +178,11 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  transform: translateX(-200%);
+  transform: translateX(-20%);
   transition: 1s;
 }
 
 .fade-in {
   transform: translate(0%, 0%) !important;
   opacity: 1 !important;
-}
-
-.test-div {
-  height: 500px;
 }

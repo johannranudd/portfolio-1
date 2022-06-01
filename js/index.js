@@ -1,36 +1,49 @@
+// navbar
 const navbar = document.querySelector('.navbar');
+// hero section
+const emptyDiv = document.querySelector('.empty-div');
+const scrollBtn = document.querySelector('.scroll-btn');
+const heroTextContainer = document.querySelector('.hero-text');
+// projects section
 const paragraph = document.querySelector('.paragraph');
 const imageContainer = document.querySelector('.image-container');
 const images = imageContainer.querySelectorAll('.card');
-const emptyDiv = document.querySelector('.empty-div');
-const scrollBtn = document.querySelector('.scroll-btn');
-// const projectsHeadline = document.querySelector('.projects-headline');
-// const projectsSection = document.querySelector('#projects-section');
-const main = document.querySelector('main');
+const projectsHeadline = document.querySelector('.projects-headline');
+// about section
 const aboutImage = document.querySelector('.about-info img');
 const aboutHeader = document.querySelector('#about-section h2');
 const aboutParagraph = document.querySelector('#about-section p');
+// tech section
+
+// const projectsSection = document.querySelector('#projects-section');
+const main = document.querySelector('main');
 
 // eventlisteners
 window.addEventListener('scroll', parallaxScroll);
 scrollBtn.addEventListener('click', scrollToProjects);
 
 function scrollToProjects() {
-  window.scroll({
-    top: window.innerHeight * 0.3,
-  });
+  if (window.innerWidth >= 768) {
+    window.scroll({
+      top: window.innerHeight,
+    });
+  }
+  if (window.innerWidth >= 1200) {
+    window.scroll({
+      top: window.innerHeight / 2,
+    });
+  }
 }
 
 function parallaxScroll(e) {
   const scroll = window.pageYOffset;
-  //   console.log(scroll);
 
   if (window.innerWidth >= 1200) {
     emptyDiv.style.height = `${scroll}px`;
     main.style.transform = `translate3d(0px, -${scroll}px, 0px)`;
+    heroTextContainer.style.marginTop = `${scroll / 120}rem`;
     images.forEach((image) => {
       const position = (window.pageYOffset * image.dataset.rate) / 3;
-      //   const yPosition = index * 100;
       image.style.transform = `translate3d(0px, ${position}px, 0px`;
     });
   }
@@ -42,11 +55,16 @@ function parallaxScroll(e) {
     });
   }
 
-  if (scroll > 550) {
+  if (scroll > 200) {
+    projectsHeadline.classList.add('fade-in');
+    paragraph.classList.add('fade-in');
+    imageContainer.classList.add('fade-in');
+  }
+
+  if (scroll > 530) {
     aboutImage.classList.add('fade-in');
     aboutHeader.classList.add('fade-in');
     aboutParagraph.classList.add('fade-in');
-    console.log('540+');
   }
 }
 

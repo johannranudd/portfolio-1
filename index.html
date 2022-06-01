@@ -25,7 +25,7 @@
           <li><a href="#" class="active-page-dark">Home</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Tech</a></li>
         </ul>
 
         <div class="menu-btn">
@@ -40,14 +40,25 @@
           </li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Tech</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- main-content -->
     <div class="hero-section">
-      <img src="./images/blucher2.jpg" alt="blucher" />
+      <!-- <img src="./images/blucher2.jpg" alt="blucher" /> -->
+      <!-- !particles -->
+      <div id="vanta-canvas"></div>
+      <!-- !particles -->
+      <div class="hero-text">
+        <h1>Johann Ranudd</h1>
+        <p>
+          Hello and welcome to my page!<br />
+          My name is Johann and I'm a Front-end developer
+        </p>
+        <!-- <p>Front-end developer</p> -->
+      </div>
       <div class="empty-div"></div>
     </div>
 
@@ -58,7 +69,7 @@
     </div>
 
     <main>
-      <h1 class="projects-headline">Projects</h1>
+      <h2 class="projects-headline">Projects</h2>
       <div class="section-center" id="projects-section">
         <p class="paragraph">
           <strong>lorem ipsum</strong> dolor sit amet consectetur adipisicing
@@ -111,22 +122,60 @@
         <div class="about-info">
           <img src="./images/blucher2.jpg" alt="Johann Ranudd" />
 
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Voluptates, enim corrupti. Possimus assumenda quas asperiores dolore
-            nihil officia, eos ea labore, velit sed, voluptate dicta explicabo
-            vel vero. Eaque sunt officiis molestias cupiditate consectetur esse
-            adipisci sequi, laborum voluptatem, ea enim blanditiis ducimus et
-            cumque quaerat quisquam debitis repellat. Minima beatae cupiditate
-            alias veritatis! Cumque deleniti officiis culpa quaerat ut vitae,
-            eos tenetur iste labore, repellat, esse cupiditate quas voluptas?
-          </p>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates, enim corrupti. Possimus assumenda quas asperiores
+              dolore nihil officia, eos ea labore, velit sed, voluptate dicta
+              explicabo vel vero. Eaque sunt officiis molestias cupiditate
+              consectetur esse adipisci sequi, laborum voluptatem, ea enim
+              blanditiis ducimus et cumque quaerat quisquam debitis repellat.
+              Minima beatae cupiditate alias veritatis! Cumque deleniti officiis
+              culpa quaerat ut vitae, eos tenetur iste labore, repellat, esse
+              cupiditate quas voluptas?
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="test-div"></div>
+      <!-- ***tech section*** -->
+      <div class="section-center" id="tech-section">
+        <h2>Tech</h2>
+      </div>
     </main>
+
     <!-- JS -->
+    <!-- smtp script -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- three js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- vanta scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.22/vanta.birds.min.js"
+      integrity="sha512-V2kLfMoZ0BGeoi172475o43xjiOz1NB4TMs0mdhUsv24xgxpf+A8hCGjdtN3+SCWNq6dMutc5f3D3OE7YNmdrg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: '#vanta-canvas',
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
+    <!-- main script -->
     <script src="./js/index.js"></script>
   </body>
 </html>

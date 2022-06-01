@@ -1,0 +1,60 @@
+{
+  "tech": [
+    {
+      "id": 1,
+      "name": "next.js",
+      "image": "https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png",
+      "status": "experience with",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 2,
+      "name": "react.js",
+      "image": "./images/react.png",
+      "status": "experience with",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 3,
+      "name": "javaScript",
+      "image": "./images/javascript-rs.webp",
+      "status": "experience with",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 4,
+      "name": "CSS",
+      "image": "./images/css.png",
+      "status": "experience with",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 5,
+      "name": "HTML",
+      "image": "./images/react.png",
+      "status": "experience with",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 6,
+      "name": "UX/UI",
+      "image": "./images/react.png",
+      "status": "experience with",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 7,
+      "name": "node.js",
+      "image": "./images/react.png",
+      "status": "want to know",
+      "text": "experience with Next.js"
+    },
+    {
+      "id": 8,
+      "name": "svelte",
+      "image": "./images/react.png",
+      "status": "want to know",
+      "text": "experience with Next.js"
+    }
+  ]
+}

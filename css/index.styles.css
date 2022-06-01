@@ -125,14 +125,14 @@
 #tech-section img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
-  max-width: 140px;
+  /* max-width: 140px; */
   object-fit: cover;
 }
 
 .tech-list {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -142,7 +142,9 @@
   align-items: center;
   gap: 2.4rem;
 }
-
+.want-to-know-tech-list img {
+  max-width: 130px;
+}
 /* ***animation** */
 .fade-in {
   transform: translate(0%, 0%) !important;

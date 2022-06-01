@@ -97,7 +97,7 @@ button {
   right: 0;
   z-index: 99;
   background: var(--clr-white);
-  width: 100%;
+  /* width: 100%; */
 }
 
 .inner-navbar {

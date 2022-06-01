@@ -6,6 +6,7 @@
 .hero-text {
   position: absolute;
   top: 0;
+  padding: 0 5%;
   height: 100%;
   width: 100%;
   display: grid;
@@ -17,6 +18,7 @@
 .hero-text h1 {
   font-size: 3rem;
   padding: 0;
+  text-align: left;
 }
 
 #vanta-canvas {
@@ -210,6 +212,7 @@
     /* transform: translateX(-50%); */
   }
   .hero-text {
+    padding: 0;
     width: 500px;
   }
   #projects-section {

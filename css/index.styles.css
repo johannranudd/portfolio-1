@@ -90,7 +90,7 @@
 }
 .about-info {
   display: grid;
-  grid-gap: 3rem;
+  /* grid-gap: 3rem; */
 }
 
 .about-info p {

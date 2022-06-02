@@ -6,7 +6,7 @@
 .hero-text {
   position: absolute;
   top: 0;
-  padding: 0 5%;
+  /* padding: 0 5%; */
   height: 100%;
   width: 100%;
   display: grid;
@@ -208,7 +208,7 @@
     min-height: 0px;
     position: absolute;
     top: 100vh;
-    /* left: 0; */
+    left: 0;
     width: 100%;
     margin: auto;
     /* left: 50%; */
